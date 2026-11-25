@@ -1,0 +1,7 @@
+{
+  "name": "divine-grace-schools-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Divine Grace Schools public website and Portal Login pages (static site).",
+  "scripts": { "start": "npx serve ." }
+}

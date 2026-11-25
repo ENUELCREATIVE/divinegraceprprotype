@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="assets/js/device-route.js"></script>
+<meta charset="utf-8">
+<title>News Article, Divine Grace Schools</title>
+<script>window.__resources = window.__resources || {};</script>
+<script src="assets/js/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<style>
+body{margin:0;background:#fff}
+.dg{--blue:#00379B;--blue-d:#002A7A;--navy:#0A1F5C;--ink:#1F2F66;--muted:#4A5A8A;--tint:#E8ECF8;--line:#D3DCF2;--ph:#A9BBE3;font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:#fff;width:100%;box-sizing:border-box;-webkit-font-smoothing:antialiased}
+.dg *,.dg *::before,.dg *::after{box-sizing:border-box}
+.dg h1,.dg h2,.dg h3,.dg h4,.dg p,.dg ul{margin:0}
+.dg ul{padding:0;list-style:none}
+.dg a{text-decoration:none}
+.dg a:focus-visible,.dg button:focus-visible{outline:3px solid #6C8CE0;outline-offset:2px}
+.dg svg{flex:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+.sec{padding:88px 0 104px}
+.sec-tint{background:var(--tint)}
+.sub{font-size:14px;line-height:1.6;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:0 22px;border-radius:6px;font-family:'Manrope',sans-serif;font-weight:700;font-size:15px;line-height:1;white-space:nowrap;cursor:pointer;border:1px solid transparent}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-d)}
+.btn-outline{background:#fff;color:var(--navy);border-color:#9FB1E0}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+.hdr{background:#fff;border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:76px}
+.logo img{display:block;width:52px;height:52px;object-fit:contain}
+.logo{display:flex;align-items:center;gap:12px;min-width:0;flex:none}
+.logo-t{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;line-height:1.1;letter-spacing:.03em;color:var(--navy);white-space:nowrap}
+.nav{align-items:center;gap:34px}
+.nav a{position:relative;padding:8px 0;font-weight:500;font-size:15px;color:var(--navy);white-space:nowrap}
+.nav a:hover{color:var(--blue)}
+.nav a.active{color:var(--blue);font-weight:600}
+.nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:2px;background:var(--blue)}
+.hdr-act{align-items:center;gap:12px}
+.d-only{display:flex}
+.m-only{display:none}
+.menu-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:8px;border:1px solid #C9D4F0;background:#fff;color:var(--blue);cursor:pointer;padding:0}
+.mpanel{border-top:1px solid var(--line);background:#fff}
+.mpanel a.ml{display:flex;align-items:center;justify-content:space-between;min-height:56px;padding:0 20px;border-bottom:1px solid var(--line);font-weight:600;font-size:16px;color:var(--navy)}
+.mpanel a.ml.active{color:var(--blue)}
+.mpanel .mdot{width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.mact{display:flex;flex-direction:column;gap:12px;padding:20px;background:var(--tint)}
+.mact .btn{width:100%}
+.banner{position:relative;aspect-ratio:2/1;overflow:hidden;background:var(--ph) repeating-linear-gradient(135deg,transparent 0 14px,rgba(255,255,255,.28) 14px 16px)}
+.banner-ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,31,99,.88) 0%,rgba(0,55,155,.72) 55%,rgba(10,31,92,.82) 100%)}
+.banner-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 20px;gap:14px}
+.banner h1{margin:0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(40px,6.4vw,92px);line-height:1.05;letter-spacing:-0.02em;color:#fff}
+.crumbs{display:flex;align-items:center;gap:10px;font-weight:600;font-size:14px;color:#fff}
+.crumbs a{color:#fff;opacity:.9}
+.crumbs a:hover{text-decoration:underline}
+.banner-cap{position:absolute;left:50%;bottom:clamp(8px,2vw,24px);transform:translateX(-50%);padding:6px 12px;border:1px dashed rgba(255,255,255,.7);border-radius:6px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#fff;white-space:nowrap;background:rgba(6,31,99,.45)}
+.ph{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;padding:16px;border:1.5px dashed #5470B0;border-radius:10px;background:var(--ph) repeating-linear-gradient(135deg,transparent 0 14px,rgba(255,255,255,.28) 14px 16px);color:var(--navy)}
+.ph b{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.08em;text-transform:uppercase}
+.ph span{font-size:13px;line-height:1.4}
+
+/* news cards */
+.news{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;align-items:stretch}
+.nc{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(10,31,92,.07)}
+.nc .ph{aspect-ratio:16/9;width:100%;border-radius:0;border-width:0 0 1.5px 0}
+.nc-b{display:flex;flex-direction:column;flex:1;padding:24px 26px 28px}
+.meta{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;margin-bottom:14px;font-size:13px;color:var(--muted)}
+.tag{display:inline-flex;align-items:center;min-height:26px;padding:0 12px;border-radius:99px;background:var(--tint);color:var(--blue);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.1em;text-transform:uppercase}
+.nc h3{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;line-height:1.25;color:var(--navy);margin-bottom:12px}
+.nc p.ex{font-size:15px;line-height:1.7;color:var(--ink);margin-bottom:20px}
+.rm{display:inline-flex;align-items:center;gap:8px;margin-top:auto;min-height:44px;font-weight:700;font-size:15px;color:var(--blue);text-decoration:underline;text-underline-offset:4px}
+.rm:hover{color:var(--blue-d)}
+.news-note{margin-top:40px;text-align:center}
+
+.ft{background:var(--blue);color:#fff}
+.ft-top{display:grid;grid-template-columns:1.5fr 1fr 1.25fr 1fr;gap:48px;padding:72px 0 56px}
+.ft h4{margin:0 0 22px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#fff}
+.ft-brand{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.ft-brand .tile2{display:flex;align-items:center;justify-content:center;width:58px;height:58px;border-radius:10px;background:#fff}
+.ft-brand .tile2 img{width:50px;height:50px;object-fit:contain;display:block}
+.ft-brand strong{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:21px;line-height:1.2}
+.ft p,.ft li,.ft a{font-size:14px;line-height:1.6;color:rgba(255,255,255,.9)}
+.ft a:hover{color:#fff;text-decoration:underline}
+.ft ul{display:flex;flex-direction:column;gap:14px}
+.ft .ql{display:grid;grid-template-columns:1fr;gap:14px}
+.ft .ct li{display:flex;align-items:flex-start;gap:12px}
+.ft .ct svg{margin-top:2px;color:#fff}
+.ft .soc{display:flex;gap:12px;margin-bottom:14px}
+.ft .soc span{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border:1px dashed rgba(255,255,255,.7);border-radius:10px;font-size:11px;color:#fff}
+.ft-bot{border-top:1px solid rgba(255,255,255,.22);padding:24px 0 32px}
+
+@media (max-width:1000px){ .news{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px} }
+@media (max-width:900px){
+  .d-only{display:none}
+  .m-only{display:flex}
+  .wrap{padding:0 32px}
+  .sec{padding:64px 0 80px}
+  .ft-top{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 32px}
+}
+@media (max-width:760px){
+  .wrap{padding:0 20px}
+  .sec{padding:40px 0 56px}
+  .crumbs{font-size:13px;gap:8px}
+  .banner-in{gap:8px}
+  .banner-cap{font-size:9px;padding:4px 8px}
+  .news{grid-template-columns:minmax(0,1fr);gap:20px}
+  .nc-b{padding:20px 20px 12px}
+  .nc h3{font-size:20px}
+  .news-note{margin-top:28px;text-align:left}
+  .ft-top{grid-template-columns:minmax(0,1fr);gap:40px;padding:56px 0 40px}
+  .ft .ql{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 16px}
+  .ft-bot{text-align:center}
+}
+
+/* header fit with seven tabs */
+@media (max-width:1140px){.hdr-in{gap:16px}.nav{gap:20px}.nav a{font-size:14px}.hdr-act{gap:8px}.hdr-act .btn{padding:0 16px;font-size:14px}}
+@media (max-width:1240px){.d-only{display:none}.m-only{display:flex}}
+
+/* news article page */
+.art-sec{padding:40px 0 104px}
+.art-wrap{max-width:960px;margin:0 auto;padding:0 40px}
+.art-back{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-bottom:16px;font-weight:700;font-size:15px;color:var(--blue)}
+.art-back:hover{color:var(--blue-d);text-decoration:underline;text-underline-offset:4px}
+.art-fig{margin:0 0 40px}
+.art-fig img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px}
+.art-img{aspect-ratio:3/2;width:100%;padding:32px}
+.art-img span{max-width:420px}
+.art-body .meta{margin-bottom:18px;font-size:14px}
+.art-body h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(30px,3.4vw,44px);line-height:1.15;letter-spacing:-0.01em;color:var(--navy);margin:0 0 28px}
+.art-body h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;line-height:1.25;color:var(--navy);margin:40px 0 16px}
+.art-body p{font-size:18px;line-height:1.8;color:var(--ink);margin:0 0 22px}
+.art-body p.meta{font-size:14px;line-height:1.5;color:var(--muted);margin:0 0 18px}
+.art-end{margin-top:48px;padding-top:32px;border-top:1px solid var(--line)}
+@media (max-width:760px){
+.art-sec{padding:20px 0 64px}
+.art-wrap{padding:0 20px}
+.art-fig{margin-bottom:28px}
+.art-img{padding:16px}
+.art-body h1{font-size:30px;margin-bottom:22px}
+.art-body h2{font-size:23px;margin:32px 0 12px}
+.art-body p{font-size:16px;line-height:1.75;margin-bottom:18px}
+.art-end{margin-top:36px;padding-top:24px}
+.art-end .btn{width:100%}
+}
+
+@media (max-width:480px){.logo img{width:40px;height:40px}.logo{gap:8px}.logo-t{font-size:12px;letter-spacing:.02em}.hdr-act .btn{padding:0 14px;font-size:14px}.hdr-in{gap:8px}
+}
+@media (max-width:360px){.hdr .wrap{padding:0 14px}.logo img{width:36px;height:36px}.logo-t{font-size:11px}.hdr-act{gap:6px}.hdr-act .btn{padding:0 12px}}
+/* soft image shadow */
+.offset::before{display:none}
+.ph,.slider,.tile{box-shadow:0 2px 6px rgba(10,31,92,.06),0 14px 32px -6px rgba(10,31,92,.20)}
+.card .ph,.nc .ph,.tile .ph{box-shadow:none}
+</style>
+</helmet>
+<div class="dg">
+  <div style="display:{{dgsBannerOn}};overflow:hidden;background:#00379B;color:#fff;white-space:nowrap" role="marquee" aria-live="off"><style>@keyframes dgsmq{from{transform:translateX(0)}to{transform:translateX(-50%)}}@media (prefers-reduced-motion:reduce){.dgsmq{animation:none!important}}</style><div class="dgsmq" style="display:flex;width:max-content;animation:dgsmq 26s linear infinite"><span style="padding:11px 48px;font:700 14px 'Manrope',sans-serif;letter-spacing:.02em">{{dgsBannerTxt}}</span><span style="padding:11px 48px;font:700 14px 'Manrope',sans-serif;letter-spacing:.02em">{{dgsBannerTxt}}</span><span style="padding:11px 48px;font:700 14px 'Manrope',sans-serif;letter-spacing:.02em">{{dgsBannerTxt}}</span><span style="padding:11px 48px;font:700 14px 'Manrope',sans-serif;letter-spacing:.02em">{{dgsBannerTxt}}</span><span style="padding:11px 48px;font:700 14px 'Manrope',sans-serif;letter-spacing:.02em">{{dgsBannerTxt}}</span><span style="padding:11px 48px;font:700 14px 'Manrope',sans-serif;letter-spacing:.02em">{{dgsBannerTxt}}</span><span style="padding:11px 48px;font:700 14px 'Manrope',sans-serif;letter-spacing:.02em">{{dgsBannerTxt}}</span><span style="padding:11px 48px;font:700 14px 'Manrope',sans-serif;letter-spacing:.02em">{{dgsBannerTxt}}</span></div></div>
+<div style="display:{{dgsFlyOn}};position:fixed;right:20px;bottom:20px;z-index:250;width:150px"><button type="button" aria-label="Close flyer" onClick="{{dgsFlyClose}}" style="position:absolute;top:-12px;right:-12px;z-index:2;display:flex;align-items:center;justify-content:center;width:34px;height:34px;padding:0;border:2px solid #fff;border-radius:50%;background:#0A1F5C;color:#fff;cursor:pointer;box-shadow:0 4px 12px rgba(6,31,99,.35)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button><a href="admissions.html" style="display:flex;flex-direction:column;justify-content:space-between;aspect-ratio:3/4;border-radius:10px;padding:14px 12px;color:#fff;text-decoration:none;background:linear-gradient(160deg,#0A1F5C,#00379B 70%);box-shadow:0 14px 34px rgba(6,31,99,.35);font-family:'Manrope',sans-serif"><span><small style="display:block;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.85">Now open</small><b style="display:block;margin-top:6px;font:700 17px/1.2 'Space Grotesk',sans-serif">Admissions<br>2026/2027</b></span><em style="font-style:normal;font-weight:700;font-size:12.5px">Apply Now</em></a></div>
+<header class="hdr">
+    <div class="wrap hdr-in">
+      <a class="logo" href="index.html" aria-label="Divine Grace Schools home"><img src="assets/images/school-logo.jpg" alt="Divine Grace Schools crest"><span class="logo-t">DIVINE GRACE<br>SCHOOLS</span></a>
+      <nav class="nav d-only" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="academics.html">Academics</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="active" href="news.html" aria-current="true">News</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="hdr-act d-only">
+        <a class="btn btn-outline" href="#portal-login">Login to Portal</a>
+        <a class="btn btn-primary" href="admissions.html">Apply Now</a>
+      </div>
+      <div class="hdr-act m-only">
+        <a class="btn btn-primary" href="admissions.html">Apply Now</a>
+        <button type="button" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="{{menuExpanded}}" onClick="{{toggleMenu}}">
+          <sc-if value="{{menuClosed}}" hint-placeholder-val="{{true}}">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg>
+          </sc-if>
+          <sc-if value="{{menuOpen}}" hint-placeholder-val="{{false}}">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg>
+          </sc-if>
+        </button>
+      </div>
+    </div>
+    <sc-if value="{{menuOpen}}" hint-placeholder-val="{{false}}">
+      <div class="mpanel m-only" style="flex-direction: column">
+        <a class="ml" href="index.html">Home</a>
+        <a class="ml" href="about.html">About Us</a>
+        <a class="ml" href="academics.html">Academics</a>
+        <a class="ml" href="admissions.html">Admissions</a>
+        <a class="ml" href="gallery.html">Gallery</a>
+        <a class="ml active" href="news.html" aria-current="true">News<span class="mdot"></span></a>
+        <a class="ml" href="contact.html">Contact Us</a>
+        <div class="mact">
+          <a class="btn btn-outline" href="#portal-login">Login to Portal</a>
+          <a class="btn btn-primary" href="admissions.html">Apply Now</a>
+        </div>
+      </div>
+    </sc-if>
+  </header>
+
+    <main>
+    <section class="art-sec" aria-label="News article">
+      <div class="art-wrap">
+        <a class="art-back" href="news.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>Back to News</a>
+
+        <figure class="art-fig">
+          <img loading="lazy" decoding="async" src="{{aImg}}" alt="" style="display:{{aImgD}}">
+          <div class="ph art-img" style="display:{{aPhD}}"><b>[Placeholder: Featured image]</b><span>The uploaded image replaces this block at its original aspect ratio: full column width, height automatic, never cropped or stretched.</span></div>
+        </figure>
+
+        <article class="art-body" aria-labelledby="art-title">
+          <p class="meta"><span class="tag">{{aCat}}</span><span>{{aDate}}</span></p>
+          <h1 id="art-title">{{aTitle}}</h1>
+          <sc-for list="{{aBlocks}}" as="b" hint-placeholder-count="8"><h2 style="display:{{b.hd}}">{{b.h}}</h2><p style="display:{{b.pd}}">{{b.p}}</p></sc-for>
+        </article>
+
+        <div class="art-end"><a class="btn btn-outline" href="news.html">Back to News</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ft">
+    <div class="wrap">
+      <div class="ft-top">
+        <div>
+          <div class="ft-brand"><span class="tile2"><img src="assets/images/school-logo.jpg" alt="Divine Grace Schools crest"></span><div><strong>Divine Grace<br>Schools</strong><div style="margin-top:4px;font-style:italic;font-size:15px;line-height:1.4;color:rgba(255,255,255,.9)">“The Lord Cometh”</div></div></div>
+          <p style="max-width: 300px">Nurturing academic excellence, godly values, and strong character in every learner, preparing them to make a meaningful impact on the world.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="ql">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#portal-login">Login to Portal</a></li>
+            <li><a href="admissions.html">Apply Now</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="ct">
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>{{contactAddress}}</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>{{contactPhone}}</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 7L2 7"></path></svg><span>{{contactEmail1}}<br>{{contactEmail2}}</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <div class="soc"><a href="{{socFacebook}}" target="{{socFacebookT}}" rel="noopener noreferrer" aria-label="Facebook" style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border:1.5px solid rgba(255,255,255,.55);border-radius:10px;box-sizing:border-box;color:#fff"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a><a href="{{socTiktok}}" target="{{socTiktokT}}" rel="noopener noreferrer" aria-label="TikTok" style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border:1.5px solid rgba(255,255,255,.55);border-radius:10px;box-sizing:border-box;color:#fff"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg></a><a href="{{socInstagram}}" target="{{socInstagramT}}" rel="noopener noreferrer" aria-label="Instagram" style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border:1.5px solid rgba(255,255,255,.55);border-radius:10px;box-sizing:border-box;color:#fff"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"></path><path d="M17.5 6.5h.01"></path></svg></a></div>
+        </div>
+      </div>
+      <div class="ft-bot"><p>© DIVINE GRACE SCHOOLS 2026, All rights reserved</p></div>
+    </div>
+  </footer>
+<div role="status" aria-live="polite" style="display:{{dgsToastDisp}};position:fixed;left:50%;bottom:88px;transform:translateX(-50%);z-index:300;max-width:min(92vw,520px);padding:12px 18px;border-radius:10px;background:#0A1F5C;color:#fff;font:600 14px/1.45 'Manrope',system-ui,sans-serif;box-shadow:0 12px 32px rgba(6,31,99,.35);text-align:center">{{dgsToast}}</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2200}}'>
+class Component extends DCLogic {
+constructor(props) { super(props); this.state = { menu: false, i: 0 }; }
+siteVals() {
+  const S = this.dgs().s || {}; const w = S.webSite || {};
+  const d = { address: "Ifofin and Aralopon, Irojo, Ilesa, Osun State.", phone: "07033765808", phone2: "", email1: "Divinegraceschools@yahoo.com", email2: "Divinegraceschoolsilesa@gmail.com", facebook: "", tiktok: "", instagram: "" };
+  const g = (k) => (typeof w[k] === "string" ? w[k] : d[k]);
+  const lk = (k) => g(k) || "#"; const tg = (k) => (g(k) ? "_blank" : "_self");
+  return { contactAddress: g("address"), contactPhone: [g("phone"), g("phone2")].filter(Boolean).join(" / "), contactEmail1: g("email1"), contactEmail2: g("email2"),
+    socFacebook: lk("facebook"), socFacebookT: tg("facebook"), socTiktok: lk("tiktok"), socTiktokT: tg("tiktok"), socInstagram: lk("instagram"), socInstagramT: tg("instagram") };
+}
+renderVals() { return Object.assign(this.__base(), this.protoVals(), this.siteVals(), this.articleVals()); }
+pubNews() {
+  const S = this.dgs().s || {}; const SEED = [{"id": 1, "t": "Divine Grace Goes Digital", "c": "School News", "d": "November 2026", "m": "2026-11", "ex": "Divine Grace Schools takes a step towards a more connected learning experience, embracing digital solutions to improve communication, support school activities and enhance the educational experience.", "b": [["p", "The world is becoming increasingly connected, and education continues to evolve alongside it. At Divine Grace Schools, we recognise the importance of embracing technology to support learning, improve communication and create a more organised school environment."], ["h", "A New Chapter in School Management"], ["p", "Our move towards digital school management represents an important step in making school operations more efficient. Through digital solutions, information can be better organised, communication can become more accessible and important school activities can be managed more effectively."], ["p", "Technology also creates opportunities to strengthen the relationship between the school, parents, teachers and students by making relevant information easier to access."], ["h", "Supporting a Better Learning Experience"], ["p", "We believe technology should complement education, not replace the important role of teachers and personal interaction. By embracing appropriate digital tools, we aim to create an environment where teaching, learning and administration can work together more effectively."], ["p", "At Divine Grace Schools, our commitment remains the same: nurturing academic excellence, godly values and strong character while preparing our learners for an increasingly digital world."], ["p", "The future is evolving, and we are taking meaningful steps forward."]], "img": "assets/images/news-1.jpg", "st": "published"}, {"id": 2, "t": "It's Picture Day!", "c": "School Activities", "d": "November 2026", "m": "2026-11", "ex": "Smiles, memories and special moments! Take a glimpse into life at Divine Grace Schools as our learners and teachers come together to capture memorable moments around the school.", "b": [["p", "Every school has special moments worth remembering. From the excitement of arriving at school to classroom activities, friendships and shared experiences, each day contributes to a story that deserves to be remembered."], ["p", "Picture Day provides an opportunity to capture some of these moments and celebrate the people who make Divine Grace Schools a special place to learn and grow."], ["h", "Capturing Life at Divine Grace"], ["p", "A photograph can tell a story that words sometimes cannot. Whether it is a learner enjoying a classroom activity, teachers guiding their students, friends sharing a happy moment or a glimpse of the school environment, these snapshots help preserve the experiences that shape school life."], ["p", "Our photographs also offer families and the wider community a glimpse into the environment where learners develop their knowledge, build relationships and discover their potential."], ["h", "Memories Worth Keeping"], ["p", "Beyond the photographs themselves, Picture Day reminds us that education is also about experiences, friendships and personal growth."], ["p", "We look forward to celebrating the many moments, big and small, that make the Divine Grace Schools journey memorable."], ["p", "Every picture tells a story. Every moment becomes a memory."]], "img": "assets/images/news-2.jpg", "st": "published"}, {"id": 3, "t": "Excellence at Divine Grace", "c": "Academic Excellence", "d": "November 2026", "m": "2026-11", "ex": "We celebrate the pursuit of excellence at Divine Grace Schools, recognising the dedication, hard work and commitment to learning that inspire our learners to reach their full potential.", "b": [["p", "Excellence is more than achieving good results. It is reflected in the willingness to learn, the discipline to improve, the courage to face challenges and the determination to give one's best."], ["p", "At Divine Grace Schools, we believe every learner has potential worth developing. Our educational approach encourages students to pursue knowledge, build confidence and approach their academic responsibilities with dedication."], ["h", "A Culture of Continuous Improvement"], ["p", "Academic growth requires commitment from both learners and teachers. Through classroom engagement, guided learning and consistent effort, students are encouraged to develop the knowledge and skills needed to progress confidently through their education."], ["p", "We also recognise that every learner develops differently. Providing encouragement, support and opportunities to improve is an important part of helping each student reach their potential."], ["h", "Celebrating the Pursuit of Excellence"], ["p", "We believe achievements begin with everyday efforts. Completing an assignment, understanding a difficult topic, asking questions and showing improvement are all meaningful parts of the learning journey."], ["p", "At Divine Grace Schools, we celebrate the dedication behind every achievement and encourage our learners to remain focused on their goals."], ["p", "Excellence is a journey of learning, growth and continuous improvement."]], "img": "assets/images/news-3.jpg", "st": "published"}, {"id": 4, "t": "A Day at Divine Grace Schools", "c": "School Life", "d": "November 2026", "m": "2026-11", "ex": "From morning activities to classroom learning and interactions with friends, discover the everyday experiences that make life at Divine Grace Schools a journey of growth and discovery.", "b": [["p", "A school day is filled with opportunities to learn, interact, explore and grow. From the beginning of daily activities to classroom lessons and interactions with friends, every moment contributes to the educational experience of our learners."], ["p", "At Divine Grace Schools, we believe that a positive learning environment is built through meaningful experiences, supportive relationships and a shared commitment to growth."], ["h", "More Than Classroom Lessons"], ["p", "Learning takes place in many ways. Students engage with new ideas, ask questions, participate in activities and develop their understanding through interaction with teachers and fellow learners."], ["p", "These everyday experiences help build important skills such as communication, teamwork, confidence and problem solving."], ["h", "Growing Together"], ["p", "Behind every school day are teachers who guide, encourage and support learners as they navigate their educational journey. There are also friendships formed, lessons discovered and experiences that help students develop socially and personally."], ["p", "Each day presents another opportunity to learn something new and make progress."], ["p", "Take a glimpse into the everyday experiences that make life at Divine Grace Schools meaningful."]], "img": "assets/images/news-4.jpg", "st": "published"}, {"id": 5, "t": "Learning Beyond the Classroom", "c": "Learning and Development", "d": "November 2026", "m": "2026-11", "ex": "Learning does not stop at the classroom door. Explore the activities and experiences that encourage curiosity, creativity, teamwork and the practical application of knowledge.", "b": [["p", "Education is not limited to textbooks, classroom lessons or written examinations. Some of the most meaningful learning experiences happen when students are encouraged to explore ideas, apply their knowledge and engage with the world around them."], ["p", "At Divine Grace Schools, we recognise the importance of developing learners who can think independently, approach challenges creatively and apply what they learn to everyday situations."], ["h", "Discovering New Possibilities"], ["p", "Activities outside regular classroom instruction can help learners discover new interests and develop important abilities. Academic competitions, intellectual activities, collaborative projects and practical learning experiences can encourage curiosity and promote healthy engagement with knowledge."], ["p", "These experiences also provide opportunities for students to build confidence, communicate their ideas and learn from one another."], ["h", "Developing Skills for the Future"], ["p", "Learning beyond the classroom helps students appreciate that knowledge has practical value. It encourages them to become curious thinkers, responsible team members and active participants in their own development."], ["p", "We believe that every opportunity to explore, practise and discover contributes to a richer educational experience."], ["p", "At Divine Grace Schools, learning is a continuous journey that extends beyond the classroom."]], "img": "assets/images/news-5.jpg", "st": "published"}, {"id": 6, "t": "Building Character, Shaping the Future", "c": "Values and Character", "d": "November 2026", "m": "2026-11", "ex": "At Divine Grace Schools, we believe strong character is essential to lasting success. Discover how discipline, godly values and positive relationships shape our learners.", "b": [["p", "Education should prepare learners not only for academic success but also for the responsibilities and opportunities of life. Knowledge is important, but the values and character developed along the way help determine how that knowledge is used."], ["p", "At Divine Grace Schools, we believe that strong character is an essential part of meaningful education. Our commitment to godly values, discipline and responsible conduct forms an important part of the learning environment we seek to provide."], ["h", "The Importance of Good Character"], ["p", "Qualities such as honesty, respect, kindness, responsibility and self discipline help learners develop positive relationships and make thoughtful decisions."], ["p", "These values are important both within and beyond the school environment. They encourage students to appreciate others, take responsibility for their actions and understand the importance of doing what is right."], ["h", "Preparing Learners for Life"], ["p", "As learners grow academically and personally, they need guidance that helps them recognise their responsibilities and understand their role in society."], ["p", "We believe that combining academic development with strong moral foundations helps prepare young people to face the future with confidence, purpose and integrity."], ["p", "At Divine Grace Schools, our goal is to nurture individuals who are equipped not only with knowledge but also with the character to make a meaningful difference."], ["p", "Nurturing academic excellence, godly values and strong character."]], "img": "assets/images/news-6.jpg", "st": "published"}];
+  const L = Array.isArray(S.webNews) ? S.webNews : SEED;
+  return L.filter((a) => a && a.st !== "draft");
+}
+articleVals() {
+  const L = this.pubNews();
+  let id = 0;
+  try { const m = /a(\d+)/.exec(String(window.location.hash || "")); if (m) { id = parseInt(m[1], 10); } } catch (e) {}
+  if (!id) { try { id = parseInt(window.localStorage.getItem("dgs.news.sel"), 10) || 0; } catch (e) {} }
+  const a = L.filter((x) => x.id === id)[0] || L[0];
+  if (!a) { return { aCat: "", aDate: "", aTitle: "Article not available", aBlocks: [{ h: "", p: "This article is not currently published.", hd: "none", pd: "block" }], aImg: "", aImgD: "none", aPhD: "none" }; }
+  return {
+    aCat: a.c, aDate: a.d, aTitle: a.t, aImg: a.img || "", aImgD: a.img ? "block" : "none", aPhD: a.img ? "none" : "flex",
+    aBlocks: (a.b || []).map((x) => ({ h: x[0] === "h" ? x[1] : "", p: x[0] === "p" ? x[1] : "", hd: x[0] === "h" ? "block" : "none", pd: x[0] === "p" ? "block" : "none" }))
+  };
+}
+
+dgs() {
+  if (window.__DGS) { return window.__DGS; }
+  const KEY = "dgs.proto.v1";
+  const seed = () => ({ formOpen: true, banner: { text: "Admissions Are Open \u2014 Apply Now", published: true }, flyer: { published: true, name: "Admissions 2026 2027 Flyer.jpg", ver: 1 } });
+  const rd = () => { try { const r = window.localStorage.getItem(KEY); if (r) { return JSON.parse(r); } } catch (e) {} try { return window.__dgsMem ? JSON.parse(window.__dgsMem) : null; } catch (e2) { return null; } };
+  const D = { s: Object.assign(seed(), rd() || {}), sig: "", subs: [] };
+  D.sig = JSON.stringify(D.s);
+  D.sync = () => { const r = rd(); if (r) { const j = JSON.stringify(Object.assign(seed(), r)); if (j !== D.sig) { D.s = Object.assign(seed(), r); D.sig = j; return true; } } return false; };
+  D.set = (p) => { D.s = Object.assign({}, D.s, p); const j = JSON.stringify(D.s); D.sig = j; window.__dgsMem = j; try { window.localStorage.setItem(KEY, j); } catch (e) {} D.subs.forEach((f) => { try { f(); } catch (e) {} }); };
+  D.today = () => { const m = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; const d = new Date(); return d.getDate() + " " + m[d.getMonth()] + " " + d.getFullYear(); };
+  D.dismissed = {};
+  D.addApplication = (rec) => {
+    const apps = (D.s.webApps || []).slice();
+    const n = apps.reduce((m, a) => Math.max(m, a.n || 0), 0) + 1; const no = "DGS/APP/" + String(n).padStart(4, "0");
+    apps.unshift({ n: n, no: no, name: rec.name, cls: rec.cls, date: D.today(), phone: rec.phone, email: rec.email, status: "New", gender: rec.gender, guardian: rec.guardian, guardianPhone: rec.phone, school: rec.school, addr: rec.addr, dob: rec.dob });
+    D.set({ webApps: apps });
+    return no;
+  };
+  window.__DGS = D;
+  return D;
+}
+__protoInit() {
+  if (this.__pi) { return; }
+  this.__pi = true;
+  const D = this.dgs();
+  this.__psig = D.sig;
+  const tick = () => { try { D.sync(); if (this.__psig !== D.sig) { this.__psig = D.sig; this.forceUpdate(); } } catch (e) {} };
+  D.subs.push(() => { try { this.__psig = D.sig; this.forceUpdate(); } catch (e) {} });
+  this.__pt = window.setInterval(tick, 700);
+}
+toastMsg(msg, ms) {
+  this.setState({ __toast: msg });
+  const id = (this.__tid = (this.__tid || 0) + 1);
+  window.setTimeout(() => { if (this.__tid === id) { this.setState({ __toast: "" }); } }, ms || 3200);
+}
+protoVals() {
+  this.__protoInit();
+  const D = this.dgs(); const st = this.state || {}; const S = D.s;
+  return {
+    dgsToast: st.__toast || "", dgsToastDisp: st.__toast ? "block" : "none",
+    dgsBannerOn: (S.banner && S.banner.published && S.banner.text) ? "block" : "none",
+    dgsBannerTxt: (S.banner && S.banner.text) || "",
+    dgsFlyOn: (S.flyer && S.flyer.published && !D.dismissed["f" + S.flyer.ver]) ? "block" : "none",
+    dgsFlyClose: () => { D.dismissed["f" + S.flyer.ver] = true; this.forceUpdate(); }
+  };
+}
+
+__base() {
+  const open = this.state.menu;
+  const v = {
+    menuOpen: open, menuClosed: !open, menuExpanded: open ? "true" : "false",
+    toggleMenu: () => this.setState({ menu: !this.state.menu })
+  };
+  return v;
+}
+}
+</script>
+<script src="assets/js/site-config.js"></script>
+<script src="assets/js/portal-link.js"></script>
+</body>
+</html>
